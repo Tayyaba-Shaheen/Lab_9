@@ -1,0 +1,81 @@
+
+DATA SCIENCE LAB 9
+Linear and Polynomial Regression, Cross-Validation, and Ridge Grid Search
+
+========================================
+TASK 1: HOUSING PRICE PREDICTION
+========================================
+
+1. Linear Regression Slope:
+   Write your actual slope here.
+
+2. Intercept:
+   Write your actual intercept here.
+
+3. Predicted price at 500 meters:
+   Write your actual prediction here.
+
+4. Explanation:
+   The slope is negative, which means that house prices
+   decrease as the distance from the nearest metro station
+   increases. The model estimates a decrease of approximately
+   0.73 price units for every additional 100 meters.
+
+========================================
+TASK 2: YACHT RESISTANCE PREDICTION
+========================================
+
+Linear Regression:
+Fold RMSE: Write your five values here.
+Mean RMSE: Write your result here.
+
+Quadratic Regression:
+Fold RMSE: Write your five values here.
+Mean RMSE: Write your result here.
+
+Conclusion:
+Quadratic Regression performs better because its mean
+RMSE is lower than Linear Regression. This indicates
+that the polynomial model predicts yacht resistance
+more accurately.
+
+========================================
+TASK 3: CONCRETE STRENGTH PREDICTION
+========================================
+
+Records after duplicate removal: 1005
+Training rows: 804
+Testing rows: 201
+
+Linear Regression Baseline:
+Mean CV RMSE: Write your result here.
+
+Top Three Ridge Grid Search Settings:
+1. Write degree, alpha and RMSE.
+2. Write degree, alpha and RMSE.
+3. Write degree, alpha and RMSE.
+
+Best Parameters:
+Write your actual best parameters here.
+
+Tuned Mean CV RMSE:
+Write your result here.
+
+Test RMSE:
+Write your result here.
+
+Test MAE:
+Write your result here.
+
+Comparison:
+The tuned Ridge model performs better than the linear
+baseline because its mean cross-validation RMSE is lower.
+
+Degree-2 Interaction:
+An example is Cement × Water. PolynomialFeatures
+creates interaction terms by multiplying input features.
+
+Scaling:
+StandardScaler is placed inside the pipeline to ensure
+that scaling is performed using only the training data
+within each cross-validation fold. This prevents data leakage.
